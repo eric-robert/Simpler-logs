@@ -1,6 +1,6 @@
 {
   "name": "simpler-logs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A lightweight log library. Not feature rich, but very simple.",
   "main": "dist/index.js",
   "author": "eric-robert",

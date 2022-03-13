@@ -13,7 +13,7 @@ function log(prefix, message, color) {
         console.log(`${exports.Colors[color]}[${prefix}]${exports.Colors.Reset} ${message}`);
     }
     else {
-        console.log(`%c[${prefix}]', '%c ${message}`, `color:${color};`, `color:black;`);
+        console.log(`%c[${prefix}]', '%c ${message}`, `color:${color};`, `color:white;`);
     }
 }
 exports.log = log;
