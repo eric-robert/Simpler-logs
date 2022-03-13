@@ -12,7 +12,7 @@ export function log (prefix : string, message : string, color : 'magenta' | 'gre
         console.log(`${Colors[color]}[${prefix}]${Colors.Reset} ${message}`)
     }
     else {
-        console.log(`%c[${prefix}]', '%c ${message}`, `color:${color};`, `color:white;`)
+        console.log(`%c[${prefix}] %c ${message}`, `color:${color};`, `color:white;`)
     }
 }
 
