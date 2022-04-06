@@ -18,19 +18,18 @@ Create logger
 ```ts
 import {Logger} from 'simpler-logs'
 
-// Logger has prefix 'example' and logs everything 'info' and higher
-const logger = new Logger('example', 'info')
+// Logger with prefix "example" and defaults to debug level
+const logger = new Logger('example', 'debug')
 
+// Will be logged as a debug log (grey)
+logger.log('Hello world')
 
-// WIll show in purple
-logger.log('important', 'Hello world')
+// Will instead by 'info' level (white)
+logger.log('Hello world', 'info')
 
-// Will show in blue
-logger.log('info', 'Hello world')
+// Will be more visable (cyan)
+logger.log('Hello world', 'important')
 
-// Will not show, as debug is lower than 'info'
-// If it were to show, it would be green
-logger.log('debug', 'Hello world')
 ```
 
 

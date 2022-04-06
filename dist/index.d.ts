@@ -1,13 +1,14 @@
 export declare const Colors: {
     Reset: string;
-    magenta: string;
-    green: string;
-    blue: string;
+    grey: string;
+    white: string;
+    cyan: string;
 };
-export declare function log(prefix: string, message: string, color: 'magenta' | 'green' | 'blue'): void;
+export declare function log(prefix: string, message: string, color: 'cyan' | 'grey' | 'white'): void;
 export declare class Logger {
     private prefix;
     private level;
-    constructor(prefix: string, level: 'important' | 'info' | 'debug' | 'none');
-    log(level: 'important' | 'info' | 'debug', message: string): void;
+    constructor(prefix: string, level?: "none" | "important" | "info" | "debug");
+    log(message: string, level?: 'important' | 'info' | 'debug' | undefined): void;
+    change_level(level: 'important' | 'info' | 'debug' | 'none'): void;
 }
